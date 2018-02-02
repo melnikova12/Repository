@@ -2,9 +2,9 @@
 #и переводит его на Pig Latin: world → orldway.
 
 print ("Привет! Сейчас ты увидишь как работает Pig Latin")
-s = input('Введите слово на английском языке: ')
+p = input('Введите слово на английском языке: ')
 consonants = 'bcdfghjklmnpqrstvwxz'
-for i in range(0,len(s)):
-    if s[0] in consonants:
-        s = s[1:] + s[0]
-print(s + "ay")
+for i in range(0,len(p)):
+    if p[0] in consonants:
+        p = p[1:] + p[0]
+print(p + "ay")
