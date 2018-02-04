@@ -19,7 +19,7 @@ print ('Количество форм на -ing: ', find_ing_word())
 #функция, которая считает сколько раз в тексте встречается слово,
 #оканчивающееся на -ing, введенное пользователем
 
-word = input('Введите слово из текста, оканчивающееся на -ing: ')
+word = input('Введите слово, оканчивающееся на -ing: ')
 
 def user_word():
     with open (fname, encoding = 'utf-8') as f:
@@ -29,6 +29,8 @@ def user_word():
         for i in words:
             if i == word:
                 m = m+1
+            if i != word:
+                m = 0
         return m
 print('Количество введенного вами слова в тексте: ', user_word())
     
