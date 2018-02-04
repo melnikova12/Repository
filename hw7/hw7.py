@@ -30,7 +30,7 @@ def user_word():
             if i == word:
                 m = m+1
         return m
-print('Количество введеного вами слова в тексте: ', user_word())
+print('Количество введенного вами слова в тексте: ', user_word())
     
         
 
