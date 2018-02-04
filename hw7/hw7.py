@@ -29,11 +29,7 @@ def user_word():
         for i in words:
             if i == word:
                 m = m+1
-            if i != word:
-                m = 0
+            else:
+                m = m+0
         return m
 print('Количество введенного вами слова в тексте: ', user_word())
-    
-        
-
-
