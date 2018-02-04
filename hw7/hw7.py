@@ -13,7 +13,7 @@ def find_ing_word():
             if i.endswith('ing'):
                 m = m+1
         return m
-print ('Количество слов, оканчивающихся на -ing: ', find_ing_word())
+print ('Количество форм на -ing: ', find_ing_word())
 
 
 #функция, которая считает сколько раз в тексте встречается слово,
