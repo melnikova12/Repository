@@ -145,7 +145,7 @@ def playing_the_game7():
 
 
 def making_the_game():
-    game = random.choice ([1,2,3,4,5,6,7,8,9,10])
+    game = random.choice ([1,2,3,4,5,6,7])
     if game == 1:
         return playing_the_game1()
     if game == 2:
