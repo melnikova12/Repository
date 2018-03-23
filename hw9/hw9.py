@@ -27,16 +27,8 @@ def find_forms():
     return forms
 
 def print_match():
+    print ('Формы глагола 'открыть' в вашем тексте: ')
     for match in find_forms():
         print (match)
 
 print_match()
-
-
-    
-       
-    
-
-    
-
-    
