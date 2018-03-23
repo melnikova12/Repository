@@ -20,7 +20,7 @@ with open (fname, encoding = 'utf-8') as f:
         text = text.replace(s, '')
 
 def find_forms():
-    forms = re.findall(r'\bоткры[ть,л,ла,ло,вает,вающий,вающее,вающая,вшийся,вшаяся,вшееся]*\b',text)
+    forms = re.findall(r'откры[ть,л,ла,ло,вает,вающий,вающее,вающая,вшийся,вшаяся,вшееся]*',text)
     return forms
 
 def print_match():
@@ -29,3 +29,12 @@ def print_match():
         print (match)
 
 print_match()
+
+
+    
+       
+    
+
+    
+
+    
