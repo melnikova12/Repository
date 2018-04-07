@@ -12,9 +12,15 @@ with open (fname, encoding = 'utf-8') as f:
     f = f.read()
     
 #поиск символов
-search = re.findall(r'<w>.*</w>', f)
+search = re.findall(r'<se>.*</se>?', f)
+i = 0 
+for p in search:
+    p = p.split('<se>\n')
+    for i in p:
+        i = i + 1
 
 #запись в файл
 #файл для записи -  text.txt
 with open ('text.txt', 'w', encoding = 'utf-8') as f:
-    f = f.write(str(len(search)))                   
+    f = f.write(str(i))                   
+                  
