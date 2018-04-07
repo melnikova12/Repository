@@ -7,12 +7,14 @@ import re
 
 fname = input ('Введите название файла: ')
 
+#чтение файла
 with open (fname, encoding = 'utf-8') as f:
-    text = f.read()
+    f = f.read()
+    
+#поиск символов
+search = re.findall(r'<w>.*</w>', f)
 
-search = re.findall(r'<w>.*</w>', text)
-
-
-file = input('Введите название файла, в который нужно записать информацию: ')
-with open (file, 'w', encoding = 'utf-8') as f:
+#запись в файл
+#файл для записи -  text.txt
+with open ('text.txt', 'w', encoding = 'utf-8') as f:
     f = f.write(str(len(search)))                   
