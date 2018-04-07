@@ -17,5 +17,5 @@ search = re.findall(r'<se>.*</se>?', f)
 #запись в файл
 #файл для записи -  text.txt
 with open ('text.txt', 'w', encoding = 'utf-8') as f:
-    f = f.write(str(i))                   
+    f = f.write(str(search))                   
                   
