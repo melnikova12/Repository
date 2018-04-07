@@ -12,11 +12,7 @@ with open (fname, encoding = 'utf-8') as f:
     f = f.read()
     
 #поиск символов
-i = 0 
 search = re.findall(r'<se>.*</se>?', f)
-for s in search:
-    i +=1
-    
 
 #запись в файл
 #файл для записи -  text.txt
