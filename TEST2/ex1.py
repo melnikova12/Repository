@@ -14,9 +14,8 @@ with open (fname, encoding = 'utf-8') as f:
 #поиск символов
 i = 0 
 search = re.findall(r'<se>.*</se>', f)
-for m in search:
-    for k in m:
-        i = i + 1 
+for k in search:
+    i = i + 1
     
 #запись в файл
 #файл для записи -  text.txt
