@@ -9,15 +9,15 @@ fname = input ('Введите название файла: ')
 
 #чтение файла
 with open (fname, encoding = 'utf-8') as f:
-    f = f.read()
+    f = f.read().split('\n')
     
 #поиск символов
 i = 0 
 search = re.findall(r'<se>.*</se>', f)
-for t in search:
-    i += 1
+for m in search:
+    for k in m:
+        i = i + 1 
     
-
 #запись в файл
 #файл для записи -  text.txt
 with open ('text.txt', 'w', encoding = 'utf-8') as f:
