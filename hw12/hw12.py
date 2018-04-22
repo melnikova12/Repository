@@ -16,7 +16,7 @@ def find_folders():
         #if os.path.exists(folder):
         if os.path.isdir(folder):
             if re.findall('[0-9]', folder):
-                i += 1
+                i = i+1
               #  continue
        # if os.path.isdir(folder):
        #     if re.findall('[0-9]', folder):
