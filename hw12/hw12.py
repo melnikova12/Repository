@@ -15,11 +15,11 @@ def find_folders():
     for folder in path:
         #if os.path.exists(folder):
         if os.path.isdir(folder):
-            if re.findall('[0-9]', folder):
+            if re.findall('.?[0-9]', folder):
                 i = i+1
               #  continue
        # if os.path.isdir(folder):
-       #     if re.findall('[0-9]', folder):
+       #     if re.findall('.?[0-9]', folder):
        #         i = i+1
     print ('Папок, в названии которых содержатся цифры: ', i )
 
