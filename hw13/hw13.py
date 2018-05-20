@@ -1,3 +1,6 @@
+#вариант1
+#какова максимальная глубина папки в этом дереве (глубину папки с программой нужно считать равной 0) 
+
 import os
 import re
 lst = []
@@ -14,6 +17,3 @@ for root, dirs, files in os.walk(start_path):
         len_sp = len(sp)
         needed_depth = max_d - len_sp + 1
 print('Максимальная глубина папки в этом дереве: ',needed_depth)
-
-        
-           
