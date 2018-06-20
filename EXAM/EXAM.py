@@ -5,6 +5,8 @@ import re
 
 #восстановление исходного текста
 #исходная директория - папка news - код должен лежать в ней 
+#файл для записи - news.txt
+
 
 def file1():
     with open ("itartass1.html", encoding = 'utf-8') as f:
@@ -188,7 +190,3 @@ def write_in_file(k):
     return f 
 
 write_in_file(k)
-
-
-
-        
